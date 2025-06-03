@@ -533,10 +533,10 @@ class App {
 
     loadPioneerModel() {
         const loader = new GLTFLoader().setPath('./assets/');
-        loader.load('pioneer.glb', (gltb) => {
-            const model = gltb.scene;
+        loader.load('pioneer.glb', (gltf) => {
+            const model = gltf.scene;
             model.position.set(0, 0, 0);
-            this.scene.add(model);
+            this.dolly.add(model);
         }, undefined, (error) => {
             console.error('Failed to load pioneer.glb:', error);
         });
