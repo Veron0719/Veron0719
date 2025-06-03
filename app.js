@@ -1,7 +1,7 @@
-import { CanvasUI } from './libs/CanvasUI.js';
+import { CanvasUI } from './libs/CanvasUI.js';More actions
 import { GazeController } from './libs/GazeController.js';
 import { LoadingBar } from './libs/LoadingBar.js';
-import { VRButton } from './libs/VRButton.js';More actions
+import { VRButton } from './libs/VRButton.js';
 import { Stats } from './libs/stats.module.js';
 import { DRACOLoader } from './libs/three/jsm/DRACOLoader.js';
 import { GLTFLoader } from './libs/three/jsm/GLTFLoader.js';
@@ -140,8 +140,8 @@ class App {
 
     loadPioneerModel() {
         const loader = new GLTFLoader().setPath('./assets/');
-        loader.load('pioneer.glb', (gltf) => {
-            const model = gltf.scene;
+        loader.load('pioneer.glb', (gltb) => {
+            const model = gltb.scene;
             model.position.set(0, 0, 0);
             this.scene.add(model);
         }, undefined, (error) => {
