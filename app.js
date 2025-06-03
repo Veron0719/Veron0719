@@ -1,4 +1,4 @@
-import { CanvasUI } from './libs/CanvasUI.js';More actions
+import { CanvasUI } from './libs/CanvasUI.js'; //More actions
 import { GazeController } from './libs/GazeController.js';
 import { LoadingBar } from './libs/LoadingBar.js';
 import { VRButton } from './libs/VRButton.js';
