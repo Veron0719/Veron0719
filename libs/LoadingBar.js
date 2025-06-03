@@ -74,7 +74,7 @@ class LoadingBar {
 		barBase.style.background = '#FF4B3E'; // changed from #aaa to light blue
 		barBase.style.width = '50%';
 		barBase.style.minWidth = '250px';
-		barBase.style.borderRadius = '10px';
+		barBase.style.borderRadius = '20px';
 		barBase.style.height = '40px';  // made it taller to fit text
 		barBase.style.position = 'relative';  // needed for positioning text
 		this.domElement.appendChild(barBase);
@@ -94,7 +94,7 @@ class LoadingBar {
 		const bar = document.createElement("div");
 		bar.style.background = '#FFB20F'; // changed from blue to orange
 		bar.style.width = '0';
-		bar.style.borderRadius = '10px';
+		bar.style.borderRadius = '20px';
 		bar.style.height = '100%';
 		barBase.appendChild(bar);
 
