@@ -1,7 +1,7 @@
 import { CanvasUI } from './libs/CanvasUI.js';
 import { GazeController } from './libs/GazeController.js';
 import { LoadingBar } from './libs/LoadingBar.js';
-import { VRButton } from './libs/VRButton.js';
+import { VRButton } from './libs/VRButton.js';More actions
 import { Stats } from './libs/stats.module.js';
 import { DRACOLoader } from './libs/three/jsm/DRACOLoader.js';
 import { GLTFLoader } from './libs/three/jsm/GLTFLoader.js';
@@ -142,7 +142,7 @@ class App {
         const loader = new GLTFLoader().setPath('./assets/');
         loader.load('pioneer.glb', (gltf) => {
             const model = gltf.scene;
-            model.position.set(2, 0, -3);
+            model.position.set(0, 0, 0);
             this.scene.add(model);
         }, undefined, (error) => {
             console.error('Failed to load pioneer.glb:', error);
